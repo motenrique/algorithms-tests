@@ -15,10 +15,10 @@ public class ConvertNumberToStringTest {
         int thirdNumber = 5;
         int fourthNumber = 42;
 
-        Assert.assertEquals("345", ConvertNumber.convertNumberToCommaFormatedString(firstNumber));
-        Assert.assertEquals("100", ConvertNumber.convertNumberToCommaFormatedString(secondNumber));
-        Assert.assertEquals("5", ConvertNumber.convertNumberToCommaFormatedString(thirdNumber));
-        Assert.assertEquals("42", ConvertNumber.convertNumberToCommaFormatedString(fourthNumber));
+        Assert.assertEquals("345", ConvertNumber.convertNumberToCommaFormattedString(firstNumber));
+        Assert.assertEquals("100", ConvertNumber.convertNumberToCommaFormattedString(secondNumber));
+        Assert.assertEquals("5", ConvertNumber.convertNumberToCommaFormattedString(thirdNumber));
+        Assert.assertEquals("42", ConvertNumber.convertNumberToCommaFormattedString(fourthNumber));
     }
 
 
@@ -30,10 +30,10 @@ public class ConvertNumberToStringTest {
         int thirdNumber = 534435;
         int fourthNumber = 42345;
 
-        Assert.assertEquals("3,450", ConvertNumber.convertNumberToCommaFormatedString(firstNumber));
-        Assert.assertEquals("1,000", ConvertNumber.convertNumberToCommaFormatedString(secondNumber));
-        Assert.assertEquals("534,435", ConvertNumber.convertNumberToCommaFormatedString(thirdNumber));
-        Assert.assertEquals("42,345", ConvertNumber.convertNumberToCommaFormatedString(fourthNumber));
+        Assert.assertEquals("3,450", ConvertNumber.convertNumberToCommaFormattedString(firstNumber));
+        Assert.assertEquals("1,000", ConvertNumber.convertNumberToCommaFormattedString(secondNumber));
+        Assert.assertEquals("534,435", ConvertNumber.convertNumberToCommaFormattedString(thirdNumber));
+        Assert.assertEquals("42,345", ConvertNumber.convertNumberToCommaFormattedString(fourthNumber));
     }
 
     @Test
@@ -44,10 +44,10 @@ public class ConvertNumberToStringTest {
         int thirdNumber = 53443565;
         int fourthNumber = 45000000;
 
-        Assert.assertEquals("34,503,456", ConvertNumber.convertNumberToCommaFormatedString(firstNumber));
-        Assert.assertEquals("1,000,000", ConvertNumber.convertNumberToCommaFormatedString(secondNumber));
-        Assert.assertEquals("53,443,565", ConvertNumber.convertNumberToCommaFormatedString(thirdNumber));
-        Assert.assertEquals("45,000,000", ConvertNumber.convertNumberToCommaFormatedString(fourthNumber));
+        Assert.assertEquals("34,503,456", ConvertNumber.convertNumberToCommaFormattedString(firstNumber));
+        Assert.assertEquals("1,000,000", ConvertNumber.convertNumberToCommaFormattedString(secondNumber));
+        Assert.assertEquals("53,443,565", ConvertNumber.convertNumberToCommaFormattedString(thirdNumber));
+        Assert.assertEquals("45,000,000", ConvertNumber.convertNumberToCommaFormattedString(fourthNumber));
     }
 
 }

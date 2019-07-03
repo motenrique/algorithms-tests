@@ -2,9 +2,9 @@ package com.itisol.number;
 
 public class ConvertNumber {
 
-    public static String convertNumberToCommaFormatedString(int number) {
+    public static String convertNumberToCommaFormattedString(int number) {
 
-        //code here
+
 
         return null;
     }
