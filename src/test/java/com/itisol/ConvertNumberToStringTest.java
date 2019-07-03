@@ -8,7 +8,7 @@ import org.junit.Test;
 public class ConvertNumberToStringTest {
 
     @Test
-    public void testNumberUnderOneThousand() throws Exception {
+    public void testNumberUnderOneThousand() {
 
         int firstNumber = 345;
         int secondNumber = 100;
@@ -23,7 +23,7 @@ public class ConvertNumberToStringTest {
 
 
     @Test
-    public void testNumberMoreThanOneThousand() throws Exception {
+    public void testNumberMoreThanOneThousand() {
 
         int firstNumber = 3450;
         int secondNumber = 1000;
@@ -37,7 +37,7 @@ public class ConvertNumberToStringTest {
     }
 
     @Test
-    public void testNumberMoreThanOneMillion() throws Exception {
+    public void testNumberMoreThanOneMillion() {
 
         int firstNumber = 34503456;
         int secondNumber = 1000000;
@@ -48,6 +48,17 @@ public class ConvertNumberToStringTest {
         Assert.assertEquals("1,000,000", ConvertNumber.convertNumberToCommaFormattedString(secondNumber));
         Assert.assertEquals("53,443,565", ConvertNumber.convertNumberToCommaFormattedString(thirdNumber));
         Assert.assertEquals("45,000,000", ConvertNumber.convertNumberToCommaFormattedString(fourthNumber));
+    }
+
+    @Test
+    public void testNumberWithZeroInMiddle() {
+        int firstNumber = 53043065;
+        int secondNumber = 6053;
+        int thirdNumber = 1002003004;
+
+        Assert.assertEquals("53,043,065", ConvertNumber.convertNumberToCommaFormattedString(firstNumber));
+        Assert.assertEquals("6,053", ConvertNumber.convertNumberToCommaFormattedString(secondNumber));
+        Assert.assertEquals("1,002,003,004", ConvertNumber.convertNumberToCommaFormattedString(thirdNumber));
     }
 
 }
