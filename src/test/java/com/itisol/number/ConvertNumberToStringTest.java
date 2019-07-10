@@ -1,7 +1,6 @@
-package com.itisol;
+package com.itisol.number;
 
 
-import com.itisol.number.ConvertNumber;
 import org.junit.Assert;
 import org.junit.Test;
 
