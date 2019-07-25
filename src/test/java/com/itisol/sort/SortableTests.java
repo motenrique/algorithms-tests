@@ -10,7 +10,7 @@ public class SortableTests {
 
     @Before
     public void setUp() {
-        sortable = null; //replace with your implementation
+        sortable = new InsertionSort(); //replace with your implementation
     }
 
     @Test
