@@ -6,12 +6,12 @@ public class Boat implements Transport {
     private static int maxSpeed = 180;
 
     @Override
-    public void navigateOnLand() {
+    public void travelOnLand() {
 
     }
 
     @Override
-    public void navigateOnWater() {
+    public void travelOnWater() {
 
         System.out.println("Turning on boat with name: " + name);
 

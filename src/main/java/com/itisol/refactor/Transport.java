@@ -1,6 +1,6 @@
 package com.itisol.refactor;
 
 public interface Transport {
-    public void navigateOnLand();
-    public void navigateOnWater();
+    public void travelOnLand();
+    public void travelOnWater();
 }
